@@ -192,6 +192,7 @@ header {
   font-weight: bold;
   font-size: 17px;
   padding-bottom: 10px ;
+  padding: 15px 15px;
 }
 #cart table tbody tr td {
   padding-top: 20px;
@@ -208,70 +209,6 @@ header {
 #cart table tbody input {
   width: 48px;
   padding: 8px 0 8px 4px;
-}
-#cart_add {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0;
-  padding: 30px;
-}
-#coupon{
-  width: 50%;
-  margin-top: 12vw;
-}
-#coupon h3,
-#total h3 {
-  font-size: 20px;
-  padding-bottom: 16px;
-}
-#coupon input {
-  padding: 12px 24px;
-  margin-right: 12px;
-  width: 600px;
-  border: 1px solid #000000;
-  border-radius: 30px;
-  outline: none;
-}
-#coupon input:focus {
-  border: 1px solid #000000;
-}
-#coupon button,
-#total button {
-  margin-top: 5px;
-  border: none;
-  cursor: pointer;
-  transition: 0.5s;
-  border: 1px solid #000000;
-  border-radius: 30px;
-  padding: 12px 24px;
-  background-color: #000000;
-  color: white;
-}
-#coupon button:hover,
-#total button:hover {
-  transform: scale(1.1);
-  background-color: #c9d6df;
-  color: black;
-}
-#total {
-  width: 50%;
-  border: 1px solid #000000;
-  padding: 32px;
-  border-radius: 30px;
-}
-#total table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  margin-bottom: 20px;
-  white-space: nowrap;
-}
-#total table td {
-  padding: 8px 12px;
-  width: 50%;
-  border: 1px solid #000000;
-  font-size: 14px;
 }
 footer {
   background-color: #f9f9f9;
@@ -343,3 +280,4 @@ footer .install .row img {
   object-fit: cover;
   scale: 1.7;
 }
+    

@@ -127,6 +127,107 @@ header {
 .cart_icon:hover {
   background-color: #c9d6df;
 }
+.slide {
+  width: 100%;
+  height: 35vw;
+  margin-top: 90px;
+  /* background-image: url(../Tainguyen/headphones_headset_mobile_meizu-542234.jpg); */
+  background-size: cover;
+  background-position: bottom;
+  background: linear-gradient(rgba(171, 139, 139, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Tainguyen/tai-nghe-bluetooth-1024x734.jpg);
+}
+.slide_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  letter-spacing: 1px;
+}
+.slide_content h3 {
+  font-size: 16px;
+  color: #c9d6df;
+  margin-top: 15px;
+}
+.slide_content h1 {
+  font-size: 40px;
+  color: #c9d6df;
+  align-items: center;
+}
+
+#product1{
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px;
+}
+#product1 .big_container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  flex-wrap: wrap;
+}
+#product1 .sp_box{
+  width: 23%;
+min-width: 248px;
+padding: 10px 12px;
+border: 1px solid #0f0f0f;
+border-radius: 25px;
+cursor: pointer;
+margin: 20px 0;
+transition: 0.2s ease;
+position: relative;
+}
+.sp_box a:hover{
+  cursor: pointer;
+}
+#product1 .blog_container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  flex-wrap: wrap;
+  padding: 0px -5px;
+}
+#product1 .blog_box{
+  width: 30%;
+  min-width: 350px;
+  padding: 10px 12px;
+  border: 1px solid #0f0f0f;
+  border-radius: 25px;
+  cursor: pointer; 
+  margin: 20px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+#product1 .blog_box img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+#product1 .blog_box:hover{
+  scale: 1.1;
+}
+#product1 .blog_box .blog_content{
+  text-align: start;
+  padding: 10px 0;
+}
+#product1 .blog_box .blog_content span{
+  font-size: 12px;
+  color: #79a5c0;
+}
+#product1 .blog_box .blog_content h4 {
+  color: #0f0f0f;
+  font-size: 22px;
+}
+#product1 .blog_box .blog_content h4:hover{
+  color: #c9d6df;
+}
+#product1 .blog_box .blog_content p{
+  font-size: 14px;
+  color: #0f0f0f;
+}
 footer {
   background-color: #f9f9f9;
   margin: 64px 0 0 0;
@@ -197,4 +298,3 @@ footer .install .row img {
   object-fit: cover;
   scale: 1.7;
 }
-    
