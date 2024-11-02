@@ -82,7 +82,7 @@ header {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   top: 0;
   right: 0;
-  transition: 0.5s;
+  transition: 0.2s;
   border: 1px solid #000000;
   border-radius: 40px;
   padding: 5px;
@@ -91,7 +91,6 @@ header {
   padding: 14px 25px;
 }
 .search button:hover {
-  transform: scale(1.1);
   background-color: #c9d6df;
   color: black;
 }

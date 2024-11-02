@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head >
+    <!-- <link rel="shortcut icon" type="image/png" href="Assets/Icons/Echo Shop Logo.svg"></link>  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dangnhap.css"> 
+    <title>Đăng Nhập</title>
+</head>
+<body>
+    <form id="formdangnhap" class="form" method="post" onsubmit="return check()">
+        <div class="form-title">
+            <!-- <a href="TrangChu.html"><i class="uil uil-arrow-left"></i></a> -->
+            <p><span class="AeFithou" style="color: rgb(0, 0, 0);">Ae FITHOU</span> chào mừng bạn!</p>
+        </div>
+
+        <div class="input-container">
+            <p class="input-title">Tên đăng nhập</p>
+            <input type="text" id="txttaikhoan" name="txttaikhoan" value="" placeholder="Nhập tên đăng nhập hoặc email">
+            <div id="alertk" class="alert" name="alerttk"></div>
+            <span></span>
+        </div>
+
+        <div class="input-container">
+            <p class="input-title">Mật khẩu</p>
+            <input type="password" id="txtmatkhau" name="txtmatkhau" placeholder="Nhập mật khẩu">
+            <div id="alertmk" class="alert" name="alertmk"></div>
+        </div>
+
+        <button type="submit" id="login">
+            Đăng nhập
+        </button>
+
+        <p id="signup-link">
+            Chưa có tài khoản?
+            <a href="../Dangki/Dangki.html">Đăng ký ngay!</a>
+        </p>
+    </form>
+</body>
+<script src="Dangnhap.js"></script>
+</html>
