@@ -5,8 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Danh mục sản phẩm</title>
-    <link rel="stylesheet" href="../../Asset/CSS/DanhMucSanPham.css">
-    <link rel="stylesheet" href="../../Asset/CSS/index.css">
+    <link rel="stylesheet" href="../../Asset/CSS/DanhMucSanPham.css"/>
+    <link rel="stylesheet" href="../../Asset/CSS/index.css"/>
 </head>
 <body>
     <header class="header">

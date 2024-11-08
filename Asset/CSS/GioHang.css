@@ -196,54 +196,89 @@ header {
         cursor: pointer;
     }
 
-#cart {
+#Cart {
     overflow-x: auto;
-    padding: 5px 50px;
 }
 
-    #cart table {
+    #Cart table {
         width: 100%;
+        margin-top: 30px;
         border-collapse: collapse;
         table-layout: fixed;
         white-space: nowrap;
-        margin-top: 40px;
     }
 
-        #cart table thead {
-            border: 1px solid #000000;
-            border-left: none;
-            border-right: none;
+        #Cart table img {
+            width: 160px;
         }
 
-            #cart table thead td {
-                padding-top: 15px;
-                font-weight: bold;
-                font-size: 17px;
-                padding-bottom: 10px;
-            }
+    #Cart .huy {
+        width: 20px;
+    }
 
-        #cart table tbody tr td {
-            padding-top: 20px;
+    #Cart table td:nth-child(1) {
+        width: 120px;
+        text-align: center;
+    }
+
+    #Cart table td:nth-child(2) {
+        width: 160px;
+        text-align: center;
+    }
+
+    #Cart table td:nth-child(3) {
+        width: 280px;
+        text-align: center;
+    }
+
+    #Cart table td:nth-child(4),
+    #Cart table td:nth-child(5),
+    #Cart table td:nth-child(6) {
+        width: 160px;
+        text-align: center;
+    }
+
+        #Cart table td:nth-child(5) input {
+            width: 80px;
+            padding: 10px 5px 10px 15px;
         }
 
-        #cart table tbody td {
-            font-size: 14px;
+    #Cart table thead {
+        border: 1px solid #c9c9c9;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 80px;
+    }
+
+        #Cart table thead td {
+            font-family: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 24px 0 20px 0;
         }
 
-        #cart table tbody i {
-            font-size: 24px;
-            cursor: pointer;
-        }
+    #Cart table tbody tr td {
+        padding-top: 20px;
+    }
 
-        #cart table tbody input {
-            width: 48px;
-            padding: 8px 0 8px 4px;
-        }
+    #Cart table tbody td {
+        font-size: 14px;
+    }
+
+    #Cart table tbody i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #Cart table tbody input {
+        width: 48px;
+        padding: 8px 0 8px 4px;
+    }
 
 #cart_add {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 20px 0;
     padding: 30px;
 }
@@ -251,6 +286,7 @@ header {
 #coupon {
     width: 50%;
     margin-top: 12vw;
+    text-align: center;
 }
 
     #coupon h3,
@@ -287,7 +323,6 @@ header {
 
         #coupon button:hover,
         #total button:hover {
-            transform: scale(1.1);
             background-color: #c9d6df;
             color: black;
         }
@@ -297,6 +332,7 @@ header {
     border: 1px solid #000000;
     padding: 32px;
     border-radius: 30px;
+    text-align: center;
 }
 
     #total table {
@@ -305,6 +341,7 @@ header {
         table-layout: fixed;
         margin-bottom: 20px;
         white-space: nowrap;
+        text-align: center; 
     }
 
         #total table td {
@@ -391,5 +428,5 @@ footer {
         margin-right: 5px;
         height: 30px;
         object-fit: cover;
-        scale: 1.7;
+        transform_scale: 1.7;
     }

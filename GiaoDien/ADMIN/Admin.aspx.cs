@@ -13,7 +13,7 @@ namespace BTLWEB.GiaoDien.ADMIN
         protected void Page_Load(object sender, EventArgs e)
         {
             //lấy sản phẩm từ application
-            List<SanPham> listSanPham = (List<SanPham>)Application["listSanPham"];
+            List<SanPham> listSanPham = (List<SanPham>)Application["DSSanPham"];
             string outputHtml = @"
                 <table>
                     <thead>

@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <section id="cart" runat="server">
+    <section id="Cart" runat="server">
         <table>
             <thead>
                 <td>Hủy</td>
@@ -84,15 +84,6 @@
     </section>
 
     <section id="cart_add">
-        <div id="coupon">
-            <h3>Mã giảm giá</h3>
-            <div>
-                <input type="text" id="coupon_code" name="coupon_code"
-                    placeholder="Nhập mã giảm giá"><br>
-                <button id="btnCoupon" class="btnCoupon">Áp dụng</button>
-            </div>
-        </div>
-
         <div id="total">
             <h3>Tổng tiền</h3>
             <table>
@@ -103,10 +94,6 @@
                 <tr>
                     <td>Phí vận chuyển</td>
                     <td>Free</td>
-                </tr>
-                <tr>
-                    <td>Mã giảm giá</td>
-                    <td>Không có mã giảm giá</td>   
                 </tr>
                 <tr>
                     <td><strong>Tổng thanh toán</strong></td>

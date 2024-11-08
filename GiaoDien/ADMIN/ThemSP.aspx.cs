@@ -28,7 +28,7 @@ namespace BTLWEB.GiaoDien.ADMIN
                 }
                 string danhMuc = Request.Form.Get("danhMucSanPhamSelect");
                 List<SanPham> dsSanPhamTrongApplication = (List<SanPham>)Application["listSanPham"];
-                SanPham sp = new SanPham(dsSanPhamTrongApplication.Count + 1, ten, moTa, gia, hinhAnh, danhMuc);
+                SanPham sp = new SanPham(dsSanPhamTrongApplication.Count + "1", ten, moTa, gia, hinhAnh, danhMuc);
                 dsSanPhamTrongApplication.Add(sp);
                 Response.Redirect("Admin.aspx");
             }

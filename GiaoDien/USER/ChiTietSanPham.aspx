@@ -54,7 +54,7 @@
             <h4 runat="server" id="tensp" name="tensp">Ten San Pham</h4>
             <hr>
             <h2 runat="server" id="giasp" name="giasp">Gia San Pham</h2>
-            <input type="number" id="soluong" name="soluong" value="1" onchange="nhapsoluong(this.value)">
+            <input runat="server" type="number" id="soluong" name="soluong" value="1" onchange="nhapsoluong(this.value)">
             <button class="sp-button" type="button" runat="server" onserverclick="Add_SP">Thêm vào giỏ hàng</button>
             <h4 runat="server" id="gioithieu"> Giới thiệu sản phẩm</h4>
             <span runat="server" id="motasp" name="motasp">

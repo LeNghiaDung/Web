@@ -51,13 +51,13 @@ namespace BTLWEB.GiaoDien.USER
         protected global::System.Web.UI.HtmlControls.HtmlAnchor nutDangXuat;
 
         /// <summary>
-        /// cart control.
+        /// Cart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cart;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Cart;
 
         /// <summary>
         /// tongtienhang control.

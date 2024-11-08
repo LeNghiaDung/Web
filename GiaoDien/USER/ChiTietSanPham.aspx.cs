@@ -1,27 +1,61 @@
-﻿using System;
-using BTLWEB;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-
-namespace BTLWEB.GiaoDien
+﻿namespace BTLWEB.GiaoDien
 {
+    using BTLWEB;
+    using System;
+    using System.Collections.Generic;
+
+    /// <summary>
+    /// Defines the <see cref="ChiTietSanPham" />
+    /// </summary>
     public partial class ChiTietSanPham : System.Web.UI.Page
     {
+        /// <summary>
+        /// Defines the idSPHienTai
+        /// </summary>
+        internal string idSPHienTai = "";
 
-        string idSPHienTai = "";
-        Class.SanPhamGioHang SPHienTai = new Class.SanPhamGioHang();
-        Class.SanPham detailProduct = new Class.SanPham();
+        /// <summary>
+        /// Defines the spHT
+        /// </summary>
+        internal Class.SanPhamGioHang spHT = new Class.SanPhamGioHang();
+
+        /// <summary>
+        /// Defines the detailProduct
+        /// </summary>
+        internal Class.SanPham detailProduct = new Class.SanPham();
+
+        /// <summary>
+        /// The Page_Load
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/></param>
+        /// <param name="e">The e<see cref="EventArgs"/></param>
         protected void Page_Load(object sender, EventArgs e)
         {
+            List<Class.SanPham> sanPhams = (List<Class.SanPham>)Application["DsSanPham"];
             KiemtraDangNhapChiTietSP();
             // lấy id
             string id = Request.QueryString.Get("id");
-            // lấy ra list 
-            List<Class.SanPham> sanPhams = (List<Class.SanPham>)Application["DsSanPham"];
 
+            foreach (Class.SanPham spchk in sanPhams)
+            {
+                if (spchk.Id == id)
+                {
+                    spHT.id = spchk.Id;
+                    spHT.hinhAnh = spchk.HinhAnh;
+                    spHT.ten = spchk.Ten;
+                    spHT.gia = spchk.Gia;
+                    detailProduct = spchk;
+                    break;
+                }
+            }
+            if (int.Parse(soluong.Value) < 0)
+            {
+                spHT.soLuong = 0;
+            }
+            else
+            {
+                spHT.soLuong = int.Parse(soluong.Value);
+            }
             string tenDanhMuc = "";
             // lấy sản phầm cần tìm 
             foreach (Class.SanPham sp in sanPhams)
@@ -69,47 +103,55 @@ namespace BTLWEB.GiaoDien
             }
             SanPhamLienQuan.InnerHtml = outputHTML;
         }
+
+        /// <summary>
+        /// The btnSearch_click
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/></param>
+        /// <param name="e">The e<see cref="EventArgs"/></param>
         protected void btnSearch_click(object sender, EventArgs e)
         {
-            
         }
+
+        /// <summary>
+        /// The Add_SP
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/></param>
+        /// <param name="e">The e<see cref="EventArgs"/></param>
         protected void Add_SP(object sender, EventArgs e)
         {
+            int slSP = 0;
             List<Class.SanPham> sanPhams = (List<Class.SanPham>)Application["DsSanPham"];
             User userTrongSession = (User)Session["user"];
             if (userTrongSession != null)
             {
-                int SoLuong = 1; // Khởi tạo SoLuong là 1 cho sản phẩm mới
-                List<Class.SanPhamGioHang> listCart = (List<Class.SanPhamGioHang>)Application["listCart"];
-                //List<string> idSPHT = (List<string>)Application["idSPHT"];
-                //bool productExists = idSPHT.Contains(idSPHienTai);
-                //if (productExists)
-                //{
-                foreach (Class.SanPhamGioHang sp in listCart)
+                //Thêm sản phẩm vào danh sách giỏ hàng
+                List<Class.SanPhamGioHang> listGH = (List<Class.SanPhamGioHang>)Application["listCart"];
+                for (int i = 0; i < spHT.soLuong; ++i)
                 {
-                    if (sp.id == idSPHienTai)
+                    listGH.Add(spHT);
+                    Application["listCart"] = listGH;
+                }
+                string id1 = Request.QueryString["id"];
+                foreach (Class.SanPhamGioHang spchk in listGH)
+                {
+                    if (spchk.id == id1)
                     {
-                        SoLuong += int.Parse(sp.soLuong);
-                        sp.soLuong = SoLuong.ToString();
-                        sp.thanhTien = SoLuong * sp.gia;
-                        Application["listCart"] = listCart;
-                        //Application["idSPHT"] = idSPHT;
-                        return;
+                        slSP = spchk.soLuong;
+                        break;
                     }
                 }
-            //}
-                SPHienTai = new Class.SanPhamGioHang(idSPHienTai, detailProduct.HinhAnh, detailProduct.Ten, detailProduct.Gia, SoLuong.ToString(), detailProduct.Gia * SoLuong);
-                listCart.Add(SPHienTai);
-                //idSPHT.Add(idSPHienTai);
-                Application["listCart"] = listCart;
-                //Application["idSPHT"] = idSPHT;
-                Response.Redirect("Giohang.aspx");
+                Response.Redirect("GioHang.aspx");
             }
             else
             {
                 Response.Redirect("DangNhap.aspx");
             }
         }
+
+        /// <summary>
+        /// The KiemtraDangNhapChiTietSP
+        /// </summary>
         public void KiemtraDangNhapChiTietSP()
         {
             //lấy user từ trong session
@@ -126,6 +168,5 @@ namespace BTLWEB.GiaoDien
                 nutDangXuat.Attributes["class"] += " hidden";
             }
         }
-
     }
 }
