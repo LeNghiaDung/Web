@@ -1,0 +1,49 @@
+﻿.formThemSanPham {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 20px 50px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.buttonSubmitForm {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .buttonSubmitForm:hover {
+        background-color: #333;
+    }
+
+.hinhAnhSanPhamInput {
+    display: none;
+}
