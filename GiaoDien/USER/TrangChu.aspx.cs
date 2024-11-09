@@ -28,7 +28,7 @@ namespace BTLWEB
             foreach (Class.SanPham sp in sanPhams)
             {
                 // Kiểm tra danh mục và số lượng sản phẩm đã thêm
-                if (count >= 6)
+                if (count >= 8)
                     break;
 
                 if (sp.TenDanhMuc == "#EarBuds" || sp.TenDanhMuc == "#HeadPhones")
