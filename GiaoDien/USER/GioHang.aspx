@@ -12,24 +12,24 @@
     <form id="formGioHang" runat="server">
     <header class="header">
         <div class="logo">
-            <img src="../Asset/LOGO/SUhouse.png" alt="logo" class="logo">
+            <img src="../../Asset/LOGO/SUhouse.png" alt="logo" class="logo">
         </div>
         <div class="menu">
             <ul id="navbar">
                 <li><a href="TrangChu.aspx">Trang chủ</a></li>
-                    <li><a href="../DsSanPham/list.html">Sản phẩm</a></li>
+                    <li><a href="DanhMucSanPham.aspx">Sản phẩm</a></li>
                     <li><a href="VeChungToi.html">Về chúng tôi</a></li>
                     <li><a href="../Blog/Blog.html">Blog</a></li>
                     <li><a href="../Trang chủ/Trangchu.html">Liên hệ</a></li>
             </ul>
         </div>
         <div class="search">
-            <div class="search_bar">
-                <input type="text" id="search" name="search"
-                    placeholder="Tìm kiếm...">
-                <button id="ButtonSearch" class="btnSearch"
-                    onclick="btnSearch_click">Tìm Kiếm</button>
-            </div>
+            <div class="search-bar">
+                <form  method="get" action="TimKiemSanPham.aspx"> 
+                <input id="search" name="search"  placeholder="Tìm kiếm sản phẩm..." type="text"/>
+                <button id="ButtonSearch" class="btnSearch">Tìm kiếm</button>
+                </form>
+            </div> 
         </div>
         <div id="user">
             <div class="avatar">
@@ -107,7 +107,7 @@
 
     <footer id="my_footer">
         <div class="col">
-            <img class="logo" src="../Tainguyen/SUhouse.png" alt="logo">
+            <img class="logo" src="../../Asset/LOGO/SUhouse.png" alt="logo">
             <h4>© Copyright 2024 | SuHouse Shop | All Rights Reserved</h4>
             <p>
                 Mua tai nghe cao cấp, phụ kiện cho tai nghe,

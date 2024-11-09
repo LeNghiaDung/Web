@@ -73,6 +73,7 @@
     <Content Include="Asset\CSS\GioHang.css" />
     <Content Include="Asset\CSS\index.css" />
     <Content Include="Asset\CSS\ThemVaCapNhatSanPham.css" />
+    <Content Include="Asset\CSS\TimKiemSanPham.css" />
     <Content Include="Asset\CSS\TrangChu.css" />
     <Content Include="Asset\LOGO\5.png" />
     <Content Include="Asset\LOGO\SUhouse.png" />
@@ -115,6 +116,7 @@
     <Content Include="GiaoDien\USER\SPGHGiam.aspx" />
     <Content Include="GiaoDien\USER\SPGHTangaspx.aspx" />
     <Content Include="GiaoDien\USER\SPGHXoa.aspx" />
+    <Content Include="GiaoDien\USER\TimKiemSanPham.aspx" />
     <Content Include="GiaoDien\USER\XuLyDangXuat.aspx" />
     <Content Include="Global.asax" />
     <Content Include="GiaoDien\USER\TrangChu.aspx" />
@@ -207,6 +209,13 @@
     </Compile>
     <Compile Include="GiaoDien\USER\SPGHXoa.aspx.designer.cs">
       <DependentUpon>SPGHXoa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\TimKiemSanPham.aspx.cs">
+      <DependentUpon>TimKiemSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\TimKiemSanPham.aspx.designer.cs">
+      <DependentUpon>TimKiemSanPham.aspx</DependentUpon>
     </Compile>
     <Compile Include="GiaoDien\USER\XuLyDangXuat.aspx.cs">
       <DependentUpon>XuLyDangXuat.aspx</DependentUpon>

@@ -127,9 +127,6 @@ header {
     position: relative;
     font-size: 16px;
 }
-#user .avatar a {
-    margin-right: 40px;
-}
 
     .btnDangNhap:hover {
         color: #c9d6df;
@@ -149,216 +146,95 @@ header {
     .cart_icon:hover {
         background-color: #c9d6df;
     }
-
-#cart_category {
+/*   danh sách sản phẩm*/
+#product1 {
+    margin-top: 100px;
     text-align: center;
-    margin: 48px 80px 0 80px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 110px;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
 }
 
-    #cart_category h1 {
+    #product1 h1 {
+        font-size: 36px;
+        margin-top: 24px;
         font-weight: lighter;
-        text-align: center;
-        font-size: 30px;
     }
 
-    #cart_category .category_button {
-        margin-top: 12px;
+    #product1 .big_container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        flex-wrap: wrap;
     }
 
-        #cart_category .category_button button {
-            background-color: #000000;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.5s;
-        }
-
-    #cart_category .button_focus {
+    #product1 .sp_box {
+        width: 23%;
+        min-width: 248px;
+        padding: 10px 12px;
+        border: 1px solid #0f0f0f;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 20px 0;
+        transition: 0.2s ease;
         position: relative;
-        overflow: hidden;
-        height: 40px;
-        padding: 12px 28px;
-        margin: 0 8px;
-        background: #c9d6df;
+    }
+
+.sp_box a:hover {
+    cursor: pointer;
+}
+
+#product1 .sp_box:hover {
+    border-color: #000000;
+    box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#product1 .sp_box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#product1 .sp_box .sp_content {
+    text-align: start;
+    padding: 10px 0;
+}
+
+    #product1 .sp_box .sp_content span {
+        font-size: 12px;
+        color: #79a5c0;
+    }
+
+    #product1 .sp_box .sp_content h4 {
+        color: #0f0f0f;
+        font-size: 18px;
+    }
+
+    #product1 .sp_box .sp_content h3 {
+        padding-top: 4px;
         color: #000000;
-        border-radius: 32px;
-        border: solid 1px #c9d6df;
-        box-shadow: 20px 38px 60px rgba(0, 0, 0, 0.2);
-        transition: all .8s ease;
-    }
-
-    #cart_category .category_button button:hover {
-        background-color: #c9d6df;
-        color: black;
-        letter-spacing: 1px;
-        cursor: pointer;
-    }
-
-#Cart {
-    overflow-x: auto;
-}
-
-    #Cart table {
-        width: 100%;
-        margin-top: 30px;
-        border-collapse: collapse;
-        table-layout: fixed;
-        white-space: nowrap;
-    }
-
-        #Cart table img {
-            width: 80px;
-        }
-
-    #Cart .huy {
-        width: 20px;
-    }
-
-    #Cart table td:nth-child(1) {
-        width: 120px;
-        text-align: center;
-    }
-
-    #Cart table td:nth-child(2) {
-        width: 160px;
-        text-align: center;
-    }
-
-    #Cart table td:nth-child(3) {
-        width: 280px;
-        text-align: center;
-    }
-
-    #Cart table td:nth-child(4),
-    #Cart table td:nth-child(5),
-    #Cart table td:nth-child(6) {
-        width: 160px;
-        text-align: center;
-    }
-
-        #Cart table td:nth-child(5) input {
-            width: 80px;
-            padding: 10px 5px 10px 15px;
-        }
-
-    #Cart table thead {
-        border: 1px solid #c9c9c9;
-        border-left: none;
-        border-right: none;
-        margin-bottom: 80px;
-    }
-        #Cart tr {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #Cart table thead td {
-            font-family: bold;
-            text-transform: uppercase;
-            font-size: 16px;
-            padding: 24px 0 20px 0;
-        }
-
-    #Cart table tbody tr td {
-        padding-top: 20px;
-    }
-
-    #Cart table tbody td {
-        font-size: 14px;
-    }
-
-    #Cart table tbody i {
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    #Cart table tbody input {
-        width: 48px;
-        padding: 8px 0 8px 4px;
-    }
-
-#cart_add {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 30px;
-}
-
-#coupon {
-    width: 50%;
-    margin-top: 12vw;
-    text-align: center;
-}
-
-    #coupon h3,
-    #total h3 {
         font-size: 20px;
-        padding-bottom: 16px;
+        text-decoration: underline;
     }
 
-    #coupon input {
-        padding: 12px 24px;
-        margin-right: 12px;
-        width: 600px;
-        border: 1px solid #000000;
-        border-radius: 30px;
-        outline: none;
-    }
+#product1 .cart {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 10px;
+    bottom: 16px;
+    right: 12px;
+    line-height: 40px;
+    color: #c9d6df;
+}
 
-        #coupon input:focus {
-            border: 1px solid #000000;
-        }
-
-    #coupon button,
-    #total button {
-        margin-top: 5px;
-        border: none;
-        cursor: pointer;
-        transition: 0.5s;
-        border: 1px solid #000000;
-        border-radius: 30px;
-        padding: 12px 24px;
-        background-color: #000000;
+    #product1 .cart:hover {
+        background-color: #c9d6df;
         color: white;
     }
-
-        #coupon button:hover,
-        #total button:hover {
-            background-color: #c9d6df;
-            color: black;
-        }
-
-#total {
-    width: 50%;
-    border: 1px solid #000000;
-    padding: 32px;
-    border-radius: 30px;
-    text-align: center;
-}
-
-    #total table {
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: fixed;
-        margin-bottom: 20px;
-        white-space: nowrap;
-        text-align: center; 
-    }
-
-        #total table td {
-            padding: 8px 12px;
-            width: 50%;
-            border: 1px solid #000000;
-            font-size: 14px;
-        }
-
 footer {
     background-color: #f9f9f9;
     margin: 64px 0 0 0;
@@ -378,7 +254,7 @@ footer {
     }
 
     footer .logo {
-        background-image: #f9f9f9;
+        background-color: #f9f9f9;
         background: #f9f9f9;
         width: auto;
         height: 120px;
@@ -416,7 +292,7 @@ footer {
         text-decoration: none;
         color: #0f0f0f;
         margin-bottom: 12px;
-        transition: 0.3s ease;
+        transition: .3s ease;
     }
 
     footer .install img {
@@ -436,7 +312,7 @@ footer {
         margin-right: 5px;
         height: 30px;
         object-fit: cover;
-        transform_scale: 1.7;
+        transform: scale(1.7);
     }
 /*responsive cho lap*/
 @media screen and (max-width: 1024px) {

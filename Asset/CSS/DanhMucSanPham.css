@@ -78,9 +78,11 @@ header {
     .search input[type="text"] {
         width: 350px;
         padding: 14px 20px;
+        box-sizing: border-box;
         border: solid 1px #c9c9c9;
         border-radius: 40px;
         outline: none;
+        height: 50px;
     }
 
         .search input[type="text"]:focus {
@@ -92,12 +94,14 @@ header {
         border: none;
         color: white;
         cursor: pointer;
-        padding: 15px 32px;
+        padding: 0px 25px;
+        height: 50px;
         border-radius: 40px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         position: absolute;
-        top: 0;
+        top: 50%;
         right: 0;
+        transform: translateY(-50%); /* Căn giữa theo chiều dọc */
         transition: .5s ease;
     }
 
@@ -123,6 +127,9 @@ header {
     margin-right: 30px;
     position: relative;
     font-size: 16px;
+}
+#user .avatar a {
+    margin-right: 40px;
 }
 
     .btnDangNhap:hover {
@@ -241,9 +248,9 @@ header {
 
     #product1 .big_container {
         display: flex;
-        justify-content: space-between;
         padding-top: 24px;
         flex-wrap: wrap;
+        gap: 35px;
     }
 
     #product1 .sp_box {
@@ -337,7 +344,7 @@ footer {
     }
 
     footer .logo {
-        background-image: #f9f9f9;
+        background-color: #f9f9f9;
         background: #f9f9f9;
         width: auto;
         height: 120px;
@@ -375,7 +382,7 @@ footer {
         text-decoration: none;
         color: #0f0f0f;
         margin-bottom: 12px;
-        transition: 0.3s ease;
+        transition: .3s ease;
     }
 
     footer .install img {
@@ -384,3 +391,314 @@ footer {
         margin: 10px 0 20px 0;
         cursor: pointer;
     }
+
+        footer .install img:hover {
+            transform: scale(1.1);
+        }
+
+    footer .install .row img {
+        display: flex;
+        width: 100px;
+        margin-right: 5px;
+        height: 30px;
+        object-fit: cover;
+        transform: scale(1.7);
+    }
+/*responsive cho lap*/
+@media screen and (max-width: 1024px) {
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    #navbar li {
+        padding: 0 10px;
+    }
+
+        #navbar li a {
+            font-size: 16px;
+        }
+
+    .search input[type="text"] {
+        width: 250px;
+    }
+
+    .search .btnSearch {
+        padding: 10px 20px;
+    }
+
+    #user .avatar a {
+        margin-right: 20px;
+    }
+
+    .btnDangNhap {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .cart_icon {
+        padding: 4px 8px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .slide {
+        height: 40vw;
+    }
+
+    .slide_content {
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+
+        .slide_content h4 {
+            font-size: 20px;
+        }
+
+        .slide_content h3 {
+            font-size: 14px;
+        }
+
+        .slide_content h1 {
+            font-size: 36px;
+        }
+
+    #product1 h1 {
+        font-size: 32px;
+    }
+
+    #product1 .sp_box {
+        width: 30%;
+    }
+
+        #product1 .sp_box img {
+            height: 250px;
+        }
+
+        #product1 .sp_box .sp_content h3 {
+            font-size: 18px;
+        }
+
+    #product2 h1 {
+        font-size: 32px;
+    }
+
+    #product2 .sp_box {
+        width: 30%;
+    }
+
+        #product2 .sp_box img {
+            height: 250px;
+        }
+
+        #product2 .sp_box .sp_content h3 {
+            font-size: 18px;
+        }
+
+    #product3 h1 {
+        font-size: 32px;
+    }
+
+    #product3 .sp_box {
+        width: 30%;
+    }
+
+        #product3 .sp_box img {
+            height: 250px;
+        }
+
+        #product3 .sp_box .sp_content h3 {
+            font-size: 18px;
+        }
+
+    .center_button .custom_button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}
+/*responsive cho tablet*/
+@media screen and (max-width: 798px) {
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    #navbar li {
+        padding: 0 10px;
+    }
+
+        #navbar li a {
+            font-size: 14px; /* Giảm font-size cho phù hợp */
+        }
+
+    .search input[type="text"] {
+        width: 200px; /* Điều chỉnh độ rộng cho màn hình nhỏ hơn */
+    }
+
+    .search .btnSearch {
+        padding: 8px 16px;
+    }
+
+    #user .avatar a {
+        margin-right: 15px;
+    }
+
+    .btnDangNhap {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .cart_icon {
+        padding: 3px 6px;
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    .slide {
+        height: 45vw; /* Điều chỉnh lại chiều cao */
+    }
+
+    .slide_content {
+        margin-top: 150px;
+        margin-left: 80px;
+    }
+
+        .slide_content h4 {
+            font-size: 18px;
+        }
+
+        .slide_content h3 {
+            font-size: 12px;
+        }
+
+        .slide_content h1 {
+            font-size: 32px;
+        }
+
+    #product1 h1,
+    #product2 h1,
+    #product3 h1 {
+        font-size: 28px; /* Giảm kích thước tiêu đề */
+    }
+
+    #product1 .sp_box,
+    #product2 .sp_box,
+    #product3 .sp_box {
+        width: 45%; /* Điều chỉnh lại kích thước cho các box */
+    }
+
+        #product1 .sp_box img,
+        #product2 .sp_box img,
+        #product3 .sp_box img {
+            height: 200px; /* Giảm chiều cao của hình ảnh */
+        }
+
+        #product1 .sp_box .sp_content h3,
+        #product2 .sp_box .sp_content h3,
+        #product3 .sp_box .sp_content h3 {
+            font-size: 16px;
+        }
+
+    .center_button .custom_button {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+}
+/*responsive cho mobile*/
+@media screen and (max-width: 480px) {
+    header {
+        height: 60px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    #navbar li {
+        padding: 0 5px;
+    }
+
+        #navbar li a {
+            font-size: 12px; /* Giảm font-size cho phù hợp với màn hình nhỏ */
+        }
+
+    .search input[type="text"] {
+        width: 150px; /* Thu nhỏ độ rộng để vừa với màn hình */
+    }
+
+    .search .btnSearch {
+        padding: 6px 12px;
+    }
+
+    #user .avatar a {
+        margin-right: 10px;
+    }
+
+    .btnDangNhap {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .cart_icon {
+        padding: 2px 4px;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .slide {
+        height: 50vw; /* Điều chỉnh chiều cao để phù hợp với màn hình điện thoại */
+    }
+
+    .slide_content {
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+
+        .slide_content h4 {
+            font-size: 16px;
+        }
+
+        .slide_content h3 {
+            font-size: 10px;
+        }
+
+        .slide_content h1 {
+            font-size: 28px;
+        }
+
+    #product1 h1,
+    #product2 h1,
+    #product3 h1 {
+        font-size: 24px; /* Giảm kích thước tiêu đề */
+    }
+
+    #product1 .sp_box,
+    #product2 .sp_box,
+    #product3 .sp_box {
+        width: 100%; /* Đặt width là 100% cho mỗi box để dễ xem hơn */
+        margin-bottom: 10px; /* Thêm khoảng cách giữa các box */
+    }
+
+        #product1 .sp_box img,
+        #product2 .sp_box img,
+        #product3 .sp_box img {
+            height: 150px; /* Giảm chiều cao của hình ảnh để phù hợp với màn hình nhỏ */
+        }
+
+        #product1 .sp_box .sp_content h3,
+        #product2 .sp_box .sp_content h3,
+        #product3 .sp_box .sp_content h3 {
+            font-size: 14px;
+        }
+
+    .center_button .custom_button {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+}

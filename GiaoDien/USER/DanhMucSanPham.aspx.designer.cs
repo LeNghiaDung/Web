@@ -15,33 +15,6 @@ namespace BTLWEB.GiaoDien.USER
     {
 
         /// <summary>
-        /// formSanPham control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formSanPham;
-
-        /// <summary>
-        /// search control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText search;
-
-        /// <summary>
-        /// ButtonSearch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonSearch;
-
-        /// <summary>
         /// btnDangNhap control.
         /// </summary>
         /// <remarks>
@@ -87,13 +60,13 @@ namespace BTLWEB.GiaoDien.USER
         protected global::System.Web.UI.HtmlControls.HtmlAnchor danhMucTaiNgheKhongDay;
 
         /// <summary>
-        /// danhMucTaiNgheChongOn control.
+        /// phuKienTaiNghe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor danhMucTaiNgheChongOn;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor phuKienTaiNghe;
 
         /// <summary>
         /// danhMucDangChon control.
