@@ -132,12 +132,15 @@
                     listGH.Add(spHT);
                     Application["listCart"] = listGH;
                 }
+                List<Class.SanPham> listSanPham = new List<Class.SanPham>();
+                listSanPham = (List<Class.SanPham>)Application["DsSanPham"];
                 string id1 = Request.QueryString["id"];
-                foreach (Class.SanPhamGioHang spchk in listGH)
+
+                foreach (Class.SanPham spchk in listSanPham)
                 {
-                    if (spchk.id == id1)
+                    if (spchk.Id == id1)
                     {
-                        slSP = spchk.soLuong;
+                        slSP = spchk.SoLuong;
                         break;
                     }
                 }

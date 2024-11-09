@@ -193,9 +193,9 @@ header {
 
     #product1 .big_container {
         display: flex;
-        justify-content: space-between;
         padding-top: 24px;
         flex-wrap: wrap;
+        gap: 35px;
     }
 
     #product1 .sp_box {
@@ -519,7 +519,7 @@ header {
     #service h1 {
         font-size: 36px;
         margin-top: 24px;
-        font-weight: lighter;
+        font-weight:lighter;
     }
 
     #service .big_container {

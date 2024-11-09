@@ -32,7 +32,7 @@ namespace BTLWEB
             sp2.Ten = "Sony WF-1000XM4";
             sp2.MoTa = "Tai nghe không dây Sony WF-1000XM4 với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp2.Gia = 3000000;
-            sp2.HinhAnh = "Asset/TAINGUYENSANPHAM/sp2.jpg";
+            sp2.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp2.jpg";
             sp2.TenDanhMuc = "#HeadPhones";
             sanPhams.Add(sp2);
 
@@ -41,7 +41,7 @@ namespace BTLWEB
             sp3.Ten = "JBL QuanTum 600";
             sp3.MoTa = "Tai nghe không dây JBL QuanTum 600 với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp3.Gia = 1500000;
-            sp3.HinhAnh = "Asset/TAINGUYENSANPHAM/sp3.jpg";
+            sp3.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp3.jpg";
             sp3.TenDanhMuc = "#HeadPhones";
             sanPhams.Add(sp3);
 
@@ -50,7 +50,7 @@ namespace BTLWEB
             sp4.Ten = "Sony WH-1000XM4";
             sp4.MoTa = "Tai nghe không dây Sony WH-1000XM4 với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp4.Gia = 5500000;
-            sp4.HinhAnh = "Asset/TAINGUYENSANPHAM/sp4.jpg";
+            sp4.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp4.jpg";
             sp4.TenDanhMuc = "#HeadPhones";
             sanPhams.Add(sp4);
 
@@ -59,7 +59,7 @@ namespace BTLWEB
             sp5.Ten = "Bose Quite Comfor";
             sp5.MoTa = "Tai nghe không dây Bose Quite Comfor với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp5.Gia = 3500000;
-            sp5.HinhAnh = "Asset/TAINGUYENSANPHAM/sp5.jpg";
+            sp5.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp5.jpg";
             sp5.TenDanhMuc = "#EarBuds";
             sanPhams.Add(sp5);
 
@@ -68,7 +68,7 @@ namespace BTLWEB
             sp6.Ten = "Samsung Galaxy Buds 3 Pro";
             sp6.MoTa = "Tai nghe không dây Samsung Galaxy Buds 3 Pro với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp6.Gia = 6500000;
-            sp6.HinhAnh = "Asset/TAINGUYENSANPHAM/sp6.jpg";
+            sp6.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp6.jpg";
             sp6.TenDanhMuc = "#EarBuds";
             sanPhams.Add(sp6);
 
@@ -77,7 +77,7 @@ namespace BTLWEB
             sp7.Ten = "Jabra Engage 65";
             sp7.MoTa = "Tai nghe không dây Jabra Engage 65 với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp7.Gia = 2000000;
-            sp7.HinhAnh = "Asset/TAINGUYENSANPHAM/sp7.jpg";
+            sp7.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp7.jpg";
             sp7.TenDanhMuc = "#EarBuds";
             sanPhams.Add(sp7);
 
@@ -86,7 +86,7 @@ namespace BTLWEB
             sp8.Ten = "Marshall Earbuds";
             sp8.MoTa = "Tai nghe không dây Marshall Earbuds với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp8.Gia = 1500000;
-            sp8.HinhAnh = "Asset/TAINGUYENSANPHAM/sp8.jpg";
+            sp8.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp8.jpg";
             sp8.TenDanhMuc = "#EarBuds";
             sanPhams.Add(sp8);
 
@@ -95,7 +95,7 @@ namespace BTLWEB
             sp9.Ten = "Marshall Major IV";
             sp9.MoTa = "Tai nghe không dây Marshall Major IV với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp9.Gia = 3000000;
-            sp9.HinhAnh = "Asset/TAINGUYENSANPHAM/sp9.jpg";
+            sp9.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp9.jpg";
             sp9.TenDanhMuc = "#HeadPhones";
             sanPhams.Add(sp9);
 
@@ -104,7 +104,7 @@ namespace BTLWEB
             sp10.Ten = "Xiaomi Air 2";
             sp10.MoTa = "Tai nghe không dây Xiaomi Air 2 với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp10.Gia = 2000000;
-            sp10.HinhAnh = "Asset/TAINGUYENSANPHAM/sp10.jpg";
+            sp10.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp10.jpg";
             sp10.TenDanhMuc = "#EarBuds";
             sanPhams.Add(sp10);
 
@@ -113,7 +113,7 @@ namespace BTLWEB
             sp11.Ten = "Xiaomi Redmi Buds 3 Pro";
             sp11.MoTa = "Tai nghe không dây Xiaomi Redmi Buds 3 Pro với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp11.Gia = 1500000;
-            sp11.HinhAnh = "Asset/TAINGUYENSANPHAM/sp11.jpg";
+            sp11.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp11.jpg";
             sp11.TenDanhMuc = "#EarBuds";
             sanPhams.Add(sp11);
 
@@ -122,7 +122,7 @@ namespace BTLWEB
             sp12.Ten = "AirPod Pro 2";
             sp12.MoTa = "Tai nghe không dây AirPod Pro 2 với chất lượng âm thanh tuyệt vời và chống ồn tốt.";
             sp12.Gia = 3500000;
-            sp12.HinhAnh = "Asset/TAINGUYENSANPHAM/sp12.jpg";
+            sp12.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp12.jpg";
             sp12.TenDanhMuc = "#EarBuds";
             sanPhams.Add(sp12);
 
@@ -131,7 +131,7 @@ namespace BTLWEB
             sp13.Ten = "Vỏ đựng ốp Case Robot";
             sp13.MoTa = "Vỏ đựng ốp Case Robot cho tai nghe AirPods Pro 2.";
             sp13.Gia = 500000;
-            sp13.HinhAnh = "Asset/TAINGUYENSANPHAM/sp13.jpg";
+            sp13.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp13.jpg";
             sp13.TenDanhMuc = "#HeadPhones";
             sanPhams.Add(sp13);
 
@@ -140,7 +140,7 @@ namespace BTLWEB
             sp14.Ten = "Miếng đệm tai Silicone cho tai nghe";
             sp14.MoTa = "Miếng đệm tai Silicone cho tai nghe AirPods Pro 2.";
             sp14.Gia = 200000;
-            sp14.HinhAnh = "Asset/TAINGUYENSANPHAM/sp14.jpg";
+            sp14.HinhAnh = "/Asset/TAINGUYENSANPHAM/sp14.jpg";
             sp14.TenDanhMuc = "#HeadPhones";
             sanPhams.Add(sp14);
 

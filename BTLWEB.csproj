@@ -76,13 +76,19 @@
     <Content Include="Asset\CSS\TrangChu.css" />
     <Content Include="Asset\LOGO\5.png" />
     <Content Include="Asset\LOGO\SUhouse.png" />
+    <Content Include="Asset\TAINGUYENSANPHAM\AppStore.png" />
+    <Content Include="Asset\TAINGUYENSANPHAM\GGPlay.png" />
     <Content Include="Asset\TAINGUYENSANPHAM\banner1.jpg" />
     <Content Include="Asset\TAINGUYENSANPHAM\banner2.jpg" />
     <Content Include="Asset\TAINGUYENSANPHAM\bud5.png" />
+    <Content Include="Asset\TAINGUYENSANPHAM\buds3.jpg" />
+    <Content Include="Asset\TAINGUYENSANPHAM\galaxybud2pro.jpg" />
+    <Content Include="Asset\TAINGUYENSANPHAM\payment.png" />
     <Content Include="Asset\TAINGUYENSANPHAM\pk1.jpg" />
     <Content Include="Asset\TAINGUYENSANPHAM\pk2.png" />
     <Content Include="Asset\TAINGUYENSANPHAM\pk3.jpg" />
     <Content Include="Asset\TAINGUYENSANPHAM\pk4.jpg" />
+    <Content Include="Asset\TAINGUYENSANPHAM\sonyLinkBuds.jpg" />
     <Content Include="Asset\TAINGUYENSANPHAM\sp1.jpg" />
     <Content Include="Asset\TAINGUYENSANPHAM\sp10.jpg" />
     <Content Include="Asset\TAINGUYENSANPHAM\sp11.jpg" />
@@ -106,6 +112,9 @@
     <Content Include="GiaoDien\USER\DangNhap.aspx" />
     <Content Include="GiaoDien\USER\DanhMucSanPham.aspx" />
     <Content Include="GiaoDien\USER\GioHang.aspx" />
+    <Content Include="GiaoDien\USER\SPGHGiam.aspx" />
+    <Content Include="GiaoDien\USER\SPGHTangaspx.aspx" />
+    <Content Include="GiaoDien\USER\SPGHXoa.aspx" />
     <Content Include="GiaoDien\USER\XuLyDangXuat.aspx" />
     <Content Include="Global.asax" />
     <Content Include="GiaoDien\USER\TrangChu.aspx" />
@@ -178,6 +187,27 @@
     <Compile Include="GiaoDien\USER\GioHang.aspx.designer.cs">
       <DependentUpon>GioHang.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\USER\SPGHGiam.aspx.cs">
+      <DependentUpon>SPGHGiam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\SPGHGiam.aspx.designer.cs">
+      <DependentUpon>SPGHGiam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\SPGHTangaspx.aspx.cs">
+      <DependentUpon>SPGHTangaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\SPGHTangaspx.aspx.designer.cs">
+      <DependentUpon>SPGHTangaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\SPGHXoa.aspx.cs">
+      <DependentUpon>SPGHXoa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\SPGHXoa.aspx.designer.cs">
+      <DependentUpon>SPGHXoa.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\USER\XuLyDangXuat.aspx.cs">
       <DependentUpon>XuLyDangXuat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -199,7 +229,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Asset\TAINGUYENSANPHAM\sp1 %282%29.avif" />
-    <Content Include="Asset\TAINGUYENSANPHAM\sp2.webp" />
+    <Content Include="Asset\TAINGUYENSANPHAM\sp2.jpg" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

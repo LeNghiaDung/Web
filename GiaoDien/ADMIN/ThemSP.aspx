@@ -27,6 +27,10 @@
             <label for="hinhAnhSanPhamInput">Hình ảnh</label>
              <asp:FileUpload runat="server" type="file" ID="hinhAnhSanPhamInput" name="hinhAnhSanPhamInput" required/>
         </div>
+        <div>
+            <label for="soLuongSanPhamInput">Số lượng</label>
+            <input placeholder="Số lượng sản phẩm" id="soLuongSanPhamInput" name="soLuongSanPhamInput" type="number" value="0" required/>
+        </div>
     <div>
        <label for="danhMucSanPhamSelect">Danh mục</label>
        <select name="danhMucSanPhamSelect" id="danhMucSanPhamSelect">

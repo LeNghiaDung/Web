@@ -116,7 +116,7 @@
             <p>Những bài viết mới nhất về các hãng tai nghe nổi tiếng</p>
             <div class="blog_container">
                 <div class="blog_box">
-                    <img src="../Tainguyen/buds3.jpg" alt="blog1"/>
+                    <img src="../../Asset/TAINGUYENSANPHAM/bud5.png" alt="blog1"/>
                     <div class="blog_content">
                         <span>12/10/2024</span>
                         <h4>HƯỚNG DẪN SỬ DỤNG TAI NGHE XIOAMI BUDS 3</h4>
@@ -125,7 +125,7 @@
                 </div>
 
                 <div class="blog_box">
-                    <img src="../Tainguyen/galaxybud2pro.jpg" alt="blog2"/>
+                    <img src="../../Asset/TAINGUYENSANPHAM/galaxybud2pro.jpg" alt="blog2"/>
                     <div class="blog_content">
                         <span>11/10/2023</span>
                         <h4>SAMSUNG GALAXY BUDS 2 PRO GIÁ CHỈ TỪ 5 TRIỆU ĐỒNG </h4>
@@ -134,7 +134,7 @@
                 </div>
 
                 <div class="blog_box">
-                    <img src="../Tainguyen/sonyLinkBuds.jpg" alt="blog3"/>
+                    <img src="../../Asset/TAINGUYENSANPHAM/sonyLinkBuds.jpg" alt="blog3"/>
                     <div class="blog_content">
                         <span>10/6/2024</span>
                         <h4>Sony Linkbuds S ĐỐI THỦ CỦA GALAXY BUDS 2 PRO</h4>
@@ -146,7 +146,7 @@
         <%---------------------------------------------FOOTER---------------------------------------------%>
         <footer id="my_footer">
             <div class="col">
-                <img class="logo" src="../Tainguyen/SUhouse.png" alt="logo"/>
+                <img class="logo" src="../../Asset/LOGO/SUhouse.png" alt="logo"/>
                 <h4>© Copyright 2024 | SuHouse Shop | All Rights Reserved</h4>
                 <p>
                     Mua tai nghe cao cấp, phụ kiện cho tai nghe,
@@ -185,11 +185,11 @@
                 <h4>Install App</h4>
                 <p>From Appstore & Google Play</p>
                 <div style="display: flex;" class="row">
-                    <img  src="../Tainguyen/2.png" alt="appstore"/>
-                    <img  src="../Tainguyen/3.png" alt="googlePlay"/>
+                    <img  src="../../Asset/TAINGUYENSANPHAM/AppStore.png" alt="appstore"/>
+                    <img  src="../../Asset/TAINGUYENSANPHAM/GGPlay.png" alt="googlePlay"/>
                 </div>
                 <p>Secured Payment Gateways</p>
-                <img src="../Tainguyen/payment.png" alt=""/>
+                <img src="../../Asset/TAINGUYENSANPHAM/payment.png" alt=""/>
             </div>
         </footer>
     </form>

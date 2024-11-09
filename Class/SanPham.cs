@@ -14,6 +14,7 @@ namespace BTLWEB.Class
         private double gia;
         private string hinhAnh;
         private string tenDanhMuc;
+        private int soLuong;
 
         //getter setter, constructor
         public string Id { get => id; set => id = value; }
@@ -22,11 +23,12 @@ namespace BTLWEB.Class
         public double Gia { get => gia; set => gia = value; }
         public string HinhAnh { get => hinhAnh; set => hinhAnh = value; }
         public string TenDanhMuc { get => tenDanhMuc; set => tenDanhMuc = value; }
+        public int SoLuong { get => soLuong; set => soLuong = value; }
 
         public SanPham()
         {
         }
-        public SanPham(string id, string ten, string moTa, double gia, string hinhAnh, string tenDanhMuc)
+        public SanPham(string id, string ten, string moTa, double gia, string hinhAnh, string tenDanhMuc, int SoLuong)
         {
             this.id = id;
             this.ten = ten;
@@ -34,6 +36,7 @@ namespace BTLWEB.Class
             this.gia = gia;
             this.hinhAnh = hinhAnh;
             this.tenDanhMuc = tenDanhMuc;
+            this.soLuong = SoLuong;
         }
     }
 }

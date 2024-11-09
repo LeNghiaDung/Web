@@ -63,14 +63,13 @@
         <table>
             <thead>
                 <td>Hủy</td>
-                <td>STT</td>
                 <td>Ảnh sản phẩm</td>
                 <td>Tên sản phẩm</td>
                 <td>Số lượng</td>
                 <td>Giá</td>
                 <td>Thành tiền</td>
             </thead>
-            <tbody>
+            <tbody id="bodySanPham" name="bodySanPham" runat="server">
                 <!-- <tr>
                     <td><button value="pr01" onclick="huysp_click(this.value)"><img src="assets/icons/close.svg"/></button></td>
                     <td><img src="assets/images/keyboard/seasalt keyboard.jpg" alt="anh-sp"></td>

@@ -209,7 +209,7 @@ header {
     }
 
         #Cart table img {
-            width: 160px;
+            width: 80px;
         }
 
     #Cart .huy {
@@ -249,6 +249,10 @@ header {
         border-right: none;
         margin-bottom: 80px;
     }
+        #Cart tr {
+            display: flex;
+            justify-content: space-between;
+        }
 
         #Cart table thead td {
             font-family: bold;

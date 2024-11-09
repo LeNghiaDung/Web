@@ -27,8 +27,9 @@ namespace BTLWEB.GiaoDien.ADMIN
                     hinhAnh = fileName;
                 }
                 string danhMuc = Request.Form.Get("danhMucSanPhamSelect");
-                List<SanPham> dsSanPhamTrongApplication = (List<SanPham>)Application["listSanPham"];
-                SanPham sp = new SanPham(dsSanPhamTrongApplication.Count + "1", ten, moTa, gia, hinhAnh, danhMuc);
+                int SoLuong = Convert.ToInt32(Request.Form.Get("soLuongSanPhamInput"));
+                List<Class.SanPham> dsSanPhamTrongApplication = (List<SanPham>)Application["DsSanPham"];
+                SanPham sp = new SanPham(dsSanPhamTrongApplication.Count + "1", ten, moTa, gia, hinhAnh, danhMuc, SoLuong);
                 dsSanPhamTrongApplication.Add(sp);
                 Response.Redirect("Admin.aspx");
             }

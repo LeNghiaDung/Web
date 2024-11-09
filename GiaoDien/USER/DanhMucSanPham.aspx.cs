@@ -105,7 +105,10 @@ namespace BTLWEB.GiaoDien.USER
                 return;
             }
         }
+        protected void btnSearch_click(object sender, EventArgs e)
+        {
 
+        }
         public void KiemtraDangNhap()
         {
             //lấy user từ trong session
