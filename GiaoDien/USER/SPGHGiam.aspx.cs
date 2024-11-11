@@ -18,12 +18,12 @@ namespace BTLWEB.GiaoDien.USER
 
             //get id from gioHang
             string id = Request.QueryString["id"];
-
+            string sdt = Request.QueryString["sđt"];
             idTrung.Remove(id);
 
             foreach (Class.SanPhamGioHang sp in listGH)
             {
-                if (sp.id == id )
+                if (sp.id == id && sp.sĐT == sdt)
                 {
                     listGH.Remove(sp);
                     break;

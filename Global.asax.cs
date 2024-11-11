@@ -1,4 +1,5 @@
 ﻿
+using BTLWEB.Class;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -183,14 +184,14 @@ namespace BTLWEB
 
             // Danh sách sản phẩm trong giỏ hàng ==============
             Application["listCart"] = new List<Class.SanPhamGioHang>();
-            Application["listCart1"] = new List<Class.SanPhamGioHang>();
             Application["idSPHT"] = new List<string>();
             Application["idTrung"] = new List<string>();
             //list user
             List<User> listUser = new List<User>();
-            //them sẵn 1 tk user 1 tk admin
+            //them sẵn 2 tk user 1 tk admin
             listUser.Add(new User("admin", "1234567890", "admin", true));
             listUser.Add(new User("Trần Minh Hiếu", "0348921209", "tranminhhieu", false));
+            listUser.Add(new User("Lê Nghĩa Dũng", "0834201999", "lnd", false));
             Application["listUsers"] = listUser;
         }
 
@@ -199,6 +200,11 @@ namespace BTLWEB
             Session["SanPham"] = new Class.SanPham();
             //tạo session lưu trữ  user đang đăng nhập
             Session["user"] = null;
+            Session["Sdt"] = "";
+            Session["user_url"] = null;
+            SoThich[] sothichs = new SoThich[1];
+            Application["danhsach"] = sothichs;
+            Session["render"] = "";
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

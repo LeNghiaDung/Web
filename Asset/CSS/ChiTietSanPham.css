@@ -417,342 +417,6 @@ body {
                 border: solid 1.5px #2664ff;
             }
 
-#product1 {
-    margin: auto;
-    align-items: center;
-    text-align: center;
-}
-
-    #product1 h1 {
-        margin-top: 28px;
-        color: #2664ff;
-        font-size: 48px;
-    }
-
-    #product1 .big-container {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 24px;
-        flex-wrap: wrap;
-    }
-
-    #product1 .sp-box {
-        width: 23%;
-        min-width: 248px;
-        padding: 10px 12px;
-        border: 1px solid #0f0f0f;
-        border-radius: 25px;
-        cursor: pointer;
-        margin: 20px 0;
-        transition: 0.2s ease;
-        position: relative;
-    }
-
-        #product1 .sp-box:hover {
-            border-color: #2664ff;
-            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        #product1 .sp-box img {
-            width: 100%;
-            height: 300px;
-            border-radius: 20px;
-            object-fit: cover;
-        }
-
-        #product1 .sp-box .sp-content {
-            text-align: start;
-            padding: 10px 0;
-        }
-
-            #product1 .sp-box .sp-content span {
-                color: #2664ff;
-                font-size: 12px;
-            }
-
-            #product1 .sp-box .sp-content h4 {
-                color: #0f0f0f;
-                font-size: 18px;
-            }
-
-            #product1 .sp-box .sp-content h3 {
-                padding-top: 4px;
-                color: #2664ff;
-                font-size: 20px;
-                text-decoration: underline;
-            }
-
-        #product1 .sp-box .add-cart {
-            width: 36px;
-            height: 36px;
-            position: absolute;
-            bottom: 16px;
-            right: 12px;
-            padding: 8px;
-            border: solid 1px #0f0f0f;
-            border-radius: 20px;
-        }
-
-            #product1 .sp-box .add-cart:hover {
-                border: solid 1.5px #2664ff;
-            }
-
-    #product1 button:hover {
-        cursor: pointer;
-    }
-
-#sm-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-image: url("Images/Header/IMG\ Mask.jpg");
-    width: 100%;
-    height: 240px;
-    margin: 24px 0;
-    background-size: cover;
-}
-
-    #sm-banner h4 {
-        color: #fdfdfd;
-        font-size: 16px;
-    }
-
-    #sm-banner h1 {
-        color: #fdfdfd;
-        font-size: 42px;
-        padding: 10px 0;
-    }
-
-    #sm-banner button {
-        margin-top: 4px;
-        padding: 12px 64px;
-        border-radius: 32px;
-        border: none;
-        background-color: #fdfdfd;
-        color: #2664ff;
-        font-size: 16px;
-        transition: 0.3s ease;
-    }
-
-        #sm-banner button:hover {
-            scale: 1.1;
-            background-color: #2664ff;
-            color: #fdfdfd;
-            border: solid 1px #fdfdfd;
-        }
-
-#service {
-    text-align: center;
-}
-
-    #service h1 {
-        margin: 8px 0 28px 0;
-        color: #2664ff;
-        font-size: 48px;
-    }
-
-    #service .big-container {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 16px;
-        flex-wrap: wrap;
-    }
-
-    #service .sp-box {
-        width: 30%;
-        min-width: 300px;
-        height: 240px;
-        padding: 10px 12px;
-        border: 1px solid #0f0f0f;
-        border-radius: 25px;
-        cursor: pointer;
-        margin: 20px 0;
-        transition: 0.2s ease;
-        position: relative;
-    }
-
-        #service .sp-box .sp-content {
-            text-align: start;
-            padding: 10px 0;
-            margin-left: 8px;
-            transition: 0.8s ease;
-        }
-
-        #service .sp-box .service-icon {
-            font-size: 80px;
-            float: right;
-            margin-top: 40px;
-            color: #2664ff;
-        }
-
-        #service .sp-box h3 {
-            font-size: 32px;
-        }
-
-        #service .sp-box p {
-            font-size: 16px;
-        }
-
-        #service .sp-box:hover i {
-            color: #fdfdfd;
-        }
-
-    #service .freeship:hover {
-        background-color: #2664ff;
-        border: none;
-        color: #fdfdfd;
-    }
-
-    #service .online-sp:hover {
-        background-color: #c861a0;
-        border: none;
-        color: #fdfdfd;
-    }
-
-    #service .payment:hover {
-        background-color: #9c6ae5;
-        border: none;
-        color: #fdfdfd;
-    }
-
-#email-register {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-image: url("Images/Header/Email\ form.jpg");
-    background-repeat: no-repeat;
-}
-
-    #email-register p {
-        font-size: 16px;
-        color: #fdfdfd;
-    }
-
-    #email-register h2 {
-        font-size: 48px;
-        padding-top: 8px;
-        color: #fdfdfd;
-    }
-
-    #email-register .email-form {
-        display: flex;
-        width: 32%;
-    }
-
-    #email-register input {
-        width: 100%;
-        height: 54px;
-        padding: 0 20px;
-        font-size: 16px;
-        border: 1px solid transparent;
-        border-radius: 32px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        outline: none;
-    }
-
-    #email-register button {
-        background-color: #c861a0;
-        cursor: pointer;
-        font-size: 16px;
-        color: #fdfdfd;
-        padding: 0 36px;
-        white-space: nowrap;
-        border: none;
-        border-radius: 32px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        transition: 0.3s ease;
-    }
-
-        #email-register button:hover {
-            background-color: #323232;
-        }
-
-#product1 .blog-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 24px;
-    flex-wrap: wrap;
-}
-
-#product1 .blog-box {
-    width: 26%;
-    min-width: 300px;
-    padding: 10px 12px;
-    border: 1px solid #0f0f0f;
-    border-radius: 25px;
-    cursor: pointer;
-    margin: 20px 0;
-    transition: 0.2s ease;
-    position: relative;
-}
-
-    #product1 .blog-box:hover {
-        border-color: #2664ff;
-        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    #product1 .blog-box img {
-        width: 100%;
-        height: 300px;
-        border-radius: 20px;
-        object-fit: cover;
-    }
-
-    #product1 .blog-box .blog-content {
-        text-align: start;
-        padding: 4px 0 8px 0;
-    }
-
-        #product1 .blog-box .blog-content span {
-            color: #2664ff;
-            font-size: 13px;
-        }
-
-        #product1 .blog-box .blog-content h4 {
-            color: #0f0f0f;
-            font-size: 18px;
-            text-decoration: underline;
-            padding-top: 4px;
-        }
-
-        #product1 .blog-box .blog-content p {
-            border-top: solid 1px #c9c9c9;
-            margin-top: 8px;
-            padding-top: 16px;
-            color: #969696;
-            font-size: 14px;
-        }
-
-
-
-#keyboard-header {
-    background-image: url("Images/Blog/Blog\ 1.jpg");
-    width: 100%;
-    height: 360px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-    #keyboard-header .sp-text {
-        color: #fdfdfd;
-        margin-top: 120px;
-    }
-
-    #keyboard-header h1 {
-        font-size: 40px;
-    }
-
-    #keyboard-header p {
-        margin-top: 4px;
-    }
-
 #sp-header {
     background-image: url("Images/Blog/Blog\ 1.jpg");
     width: 100%;
@@ -798,6 +462,7 @@ body {
 
         #sp-detail .single-pro-image img {
             width: 100%;
+            max-width:100%;
             height: 480px;
             object-fit: fill;
             margin-top: 12px;
@@ -1398,7 +1063,9 @@ footer {
     header {
         height: 60px;
     }
-
+    #my_footer{
+        display:none;
+    }
     .logo {
         height: 60px;
     }
@@ -1434,54 +1101,27 @@ footer {
         margin-right: 5px;
     }
 
-    .slide {
-        height: 50vw; /* Điều chỉnh chiều cao để phù hợp với màn hình điện thoại */
+    #sp-detail {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .slide_content {
-        margin-top: 100px;
-        margin-left: 40px;
+    .single-pro-image, .sp-info {
+        width: 100%;
+        max-width: none;
+        text-align: center;
     }
 
-        .slide_content h4 {
-            font-size: 16px;
+        .sp-info input[type="number"] {
+            width: 80px;
         }
 
-        .slide_content h3 {
-            font-size: 10px;
-        }
-
-        .slide_content h1 {
-            font-size: 28px;
-        }
-
-    #product1 h1,
-    #product2 h1,
-    #product3 h1 {
-        font-size: 24px; /* Giảm kích thước tiêu đề */
-    }
-
-    #product1 .sp_box,
-    #product2 .sp_box,
-    #product3 .sp_box {
-        width: 100%; /* Đặt width là 100% cho mỗi box để dễ xem hơn */
-        margin-bottom: 10px; /* Thêm khoảng cách giữa các box */
-    }
-
-        #product1 .sp_box img,
-        #product2 .sp_box img,
-        #product3 .sp_box img {
-            height: 150px; /* Giảm chiều cao của hình ảnh để phù hợp với màn hình nhỏ */
-        }
-
-        #product1 .sp_box .sp_content h3,
-        #product2 .sp_box .sp_content h3,
-        #product3 .sp_box .sp_content h3 {
+        .sp-info h2, .sp-info h4, .sp-info .sp-button {
             font-size: 14px;
         }
 
-    .center_button .custom_button {
-        font-size: 16px;
-        padding: 4px 8px;
+            .center_button .custom_button {
+                font-size: 16px;
+                padding: 4px 8px;
     }
 }

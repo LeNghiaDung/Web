@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh mục sản phẩm</title>
     <link rel="stylesheet" href="../../Asset/CSS/DanhMucSanPham.css"/>
     <link rel="stylesheet" href="../../Asset/CSS/index.css"/>

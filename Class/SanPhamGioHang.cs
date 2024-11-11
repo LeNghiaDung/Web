@@ -13,10 +13,10 @@ namespace BTLWEB.Class
         private double Gia;
         private int SoLuong;
         private double ThanhTien;
-
+        private string SĐT;
         public SanPhamGioHang() { }
 
-        public SanPhamGioHang(string Id, string HinhAnh, string Ten, double Gia, int SoLuong, double ThanhTien)
+        public SanPhamGioHang(string Id, string HinhAnh, string Ten, double Gia, int SoLuong, double ThanhTien, string sĐT)
         {
             this.Id = Id;
             this.HinhAnh = HinhAnh;
@@ -24,6 +24,7 @@ namespace BTLWEB.Class
             this.Gia = Gia;
             this.SoLuong = SoLuong;
             this.ThanhTien = ThanhTien;
+            SĐT = sĐT;
         }
 
         public string id { get => Id; set => Id = value; }
@@ -32,6 +33,7 @@ namespace BTLWEB.Class
         public double gia { get => Gia; set => Gia = value; }
         public int soLuong { get => SoLuong; set => SoLuong = value; }
         public double thanhTien { get => ThanhTien; set => ThanhTien = value; }
+        public string sĐT { get => SĐT; set => SĐT = value; }
 
     }
 }

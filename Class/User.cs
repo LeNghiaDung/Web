@@ -25,5 +25,6 @@ namespace BTLWEB
             this.matKhau = matKhau;
             this.isAdmin = isAdmin;
         }
+       
     }
 }

@@ -72,9 +72,11 @@
     <Content Include="Asset\CSS\DanhMucSanPham.css" />
     <Content Include="Asset\CSS\GioHang.css" />
     <Content Include="Asset\CSS\index.css" />
+    <Content Include="Asset\CSS\style.css" />
     <Content Include="Asset\CSS\ThemVaCapNhatSanPham.css" />
     <Content Include="Asset\CSS\TimKiemSanPham.css" />
     <Content Include="Asset\CSS\TrangChu.css" />
+    <Content Include="Asset\js\XuliThi.js" />
     <Content Include="Asset\LOGO\5.png" />
     <Content Include="Asset\LOGO\SUhouse.png" />
     <Content Include="Asset\TAINGUYENSANPHAM\AppStore.png" />
@@ -111,6 +113,7 @@
     <Content Include="GiaoDien\USER\ChiTietSanPham.aspx" />
     <Content Include="GiaoDien\USER\DangKy.aspx" />
     <Content Include="GiaoDien\USER\DangNhap.aspx" />
+    <Content Include="GiaoDien\USER\DangNhapThi.aspx" />
     <Content Include="GiaoDien\USER\DanhMucSanPham.aspx" />
     <Content Include="GiaoDien\USER\GioHang.aspx" />
     <Content Include="GiaoDien\USER\SPGHGiam.aspx" />
@@ -125,6 +128,7 @@
   <ItemGroup>
     <Compile Include="Class\SanPham.cs" />
     <Compile Include="Class\SanPhamGioHang.cs" />
+    <Compile Include="Class\SoThich.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="GiaoDien\ADMIN\Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
@@ -174,6 +178,13 @@
     </Compile>
     <Compile Include="GiaoDien\USER\DangNhap.aspx.designer.cs">
       <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\USER\DangNhapThi.aspx.cs">
+      <DependentUpon>DangNhapThi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\USER\DangNhapThi.aspx.designer.cs">
+      <DependentUpon>DangNhapThi.aspx</DependentUpon>
     </Compile>
     <Compile Include="GiaoDien\USER\DanhMucSanPham.aspx.cs">
       <DependentUpon>DanhMucSanPham.aspx</DependentUpon>

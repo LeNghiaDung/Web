@@ -12,12 +12,13 @@ namespace BTLWEB.GiaoDien.USER
         protected void Page_Load(object sender, EventArgs e)
         {
             string id = Request.QueryString["id"];
+            string sdt = Request.QueryString["sđt"];
             List<Class.SanPhamGioHang> listGH = (List<Class.SanPhamGioHang>)Application["listCart"];
             Class.SanPhamGioHang spHT = new Class.SanPhamGioHang();
 
             foreach (Class.SanPhamGioHang sp in listGH)
             {
-                if (sp.id == id)
+                if (sp.id == id && sp.sĐT == sdt)
                 {
                     spHT.id = id;
                     spHT.hinhAnh = sp.hinhAnh;

@@ -163,9 +163,9 @@ header {
 
     #product1 .big_container {
         display: flex;
-        justify-content: space-between;
         padding-top: 24px;
         flex-wrap: wrap;
+        gap: 35px;
     }
 
     #product1 .sp_box {

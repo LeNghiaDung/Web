@@ -615,7 +615,9 @@ footer {
     header {
         height: 60px;
     }
-
+    #my_footer {
+        display: none;
+    }
     .logo {
         height: 60px;
     }
@@ -626,6 +628,7 @@ footer {
 
         #navbar li a {
             font-size: 12px; /* Giảm font-size cho phù hợp với màn hình nhỏ */
+            display:none;
         }
 
     .search input[type="text"] {

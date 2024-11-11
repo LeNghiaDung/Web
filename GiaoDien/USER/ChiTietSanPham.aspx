@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Chi tiết sản phẩm</title>
     <link href="../../Asset/CSS/ChiTietSanPham.css" rel="stylesheet" />
     <link href="../../Asset/CSS/index.css" rel="stylesheet" />
@@ -75,7 +76,7 @@
       <!-- footer -->
         <footer id="my_footer">
             <div class="col">
-                <img class="logo" src="../Asset/LOGO/SUhouse.png" alt="logo">
+                <img class="logo" src="../../Asset/LOGO/SUhouse.png" alt="logo">
                 <h4>© Copyright 2024 | SuHouse Shop | All Rights Reserved</h4>
                 <p>
                     Mua tai nghe cao cấp, phụ kiện cho tai nghe,
@@ -114,11 +115,11 @@
                 <h4>Install App</h4>
                 <p>From Appstore & Google Play</p>
                 <div style="display: flex;" class="row">
-                    <img style="width: 100px; height: 25px; object-fit: cover; scale: 1.5;" src="../../Assets/HinhAnh/2.png" alt="appstore">
-                    <img  style="width: 100px; height: 25px; object-fit: cover; scale: 1.5" src="../../Assets/HinhAnh/3.png" alt="googlePlay">
+                    <img style="width: 100px; height: 25px; object-fit: cover; scale: 1.5;" src="../../Asset/TAINGUYENSANPHAM/AppStore.png" alt="appstore">
+                    <img  style="width: 100px; height: 25px; object-fit: cover; scale: 1.5" src="../../Asset/TAINGUYENSANPHAM/GGPlay.png" alt="googlePlay">
                 </div>
                 <p>Secured Payment Gateways</p>
-                <img src="../../Assets/HinhAnh/payment.png" alt="">
+                <img src="../../Asset/TAINGUYENSANPHAM/payment.png" alt="">
             </div>
         </footer>
     </section>
