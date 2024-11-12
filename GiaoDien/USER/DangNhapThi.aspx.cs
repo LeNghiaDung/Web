@@ -34,7 +34,7 @@ namespace BTLWEB.GiaoDien.USER
             //        Array.Resize(ref dshobby, dshobby.Length + 1);
             //    }
 
-            //    //dshobby[dshobby.Length - 1] = new soThich(inputHoTen, inputNS, inputGioiTinh, in);
+            //    //dshobby[dshobby.Length - 1] = new soThich(inputHoTen, inputNS, inputGioiTinh, in );
             //    Application["danhsach"] = dshobby;
 
             //    //Session["render"] = render();
