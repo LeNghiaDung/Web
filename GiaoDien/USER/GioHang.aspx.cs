@@ -46,6 +46,7 @@
         /// </summary>
         public void HienSP()
         {
+            User userTrongSession = (User)Session["user"];
             //Danh sách các sản phảm đã thêm vào giỏ hàng
             List<string> idTrung = (List<string>)Application["idTrung"];
             List<Class.SanPhamGioHang> listGH = (List<Class.SanPhamGioHang>)Application["listCart"];
@@ -71,7 +72,7 @@
                     //Đếm số lượng sp trùng = cách lấy hết id trùng chuyển về mảng và đếm só lượng mảng đó
                     //Phương thức LINQ trong C#
                     int soLuongId = idTrung.Where((idCheck) => idCheck == idCount).ToArray().Length;
-                    int soLuongSP = listGH.Where((spCheck) => spCheck.id == idCount ).ToArray().Length;
+                    int soLuongSP = listGH.Where((spCheck) => spCheck.id == idCount && spCheck.sĐT == userTrongSession.Sdt ).ToArray().Length;
                     ListIdChecked.Add(idCount);
                     foreach (Class.SanPhamGioHang spGH in listGH)
                     {
@@ -83,7 +84,7 @@
                         }
                         else
                         {
-                            if (spGH.id == idCount )
+                            if (spGH.id == idCount && spGH.sĐT == userTrongSession.Sdt)
                             {
                                 ghim.Add(spGH);
                                 // set số lượng cho sản phẩm giỏ hàng

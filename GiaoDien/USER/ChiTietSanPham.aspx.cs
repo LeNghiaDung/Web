@@ -48,6 +48,7 @@
                     break;
                 }
             }
+
             if (int.Parse(soluong.Value) < 0)
             {
                 spHT.soLuong = 0;
@@ -164,6 +165,7 @@
             {
                 btnDangNhap.Attributes["class"] += " hidden";//thêm class hidden để ẩn nút đăng nhập vì đã đăng nhập thành công
                 tenNguoiDungDangNhap.InnerText = userTrongSession.HoVaTen;
+                spHT.sĐT = userTrongSession.Sdt;
             }
             else
             {
