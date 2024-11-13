@@ -25,6 +25,7 @@ namespace BTLWEB.GiaoDien.USER
                     spHT.ten = sp.ten;
                     spHT.gia = sp.gia;
                     spHT.soLuong = 1;
+                    spHT.sĐT = sdt;
                     break;
                 }
             }
